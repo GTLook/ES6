@@ -281,39 +281,47 @@ Lets solve this problem together!
 ###### We are a community!
 
 
-## Relevant Upcoming Events at Galvanize
+## Upcoming Events
+
+#### Meetups and Free workshops!
  
-We host sooo many events! check out out [calendar](https://www.galvanize.com/seattle/events)
+We host so many events! check out out [calendar](https://www.galvanize.com/seattle/events)
 
-- [Learn to Code Workshop: Intro to Machine Learning](https://www.meetup.com/Seattle-Data-Science/events/255034878/) - Every Thursday 6:30 PM to 8:30 PM
-
-- [Practicing Coding Interviews](https://www.meetup.com/PSPPython/events/shfwgqyxnblb/) - Monday, October 8, 2018
+- [How to Present your Project | Giving a Technical Talk](https://www.eventbrite.com/e/how-to-present-your-project-giving-a-technical-talk-tickets-51783298239) - Thursday, November 8, 2018
 6:30 PM to 8:30 PM
 
-- [PuPPy Programming Night](https://www.meetup.com/PSPPython/events/zdzrxpyxnbpb/) - Every Thursday 6:30 PM to 8:45 PM
+- [JavaScript 101](https://www.eventbrite.com/e/learn-javascript-and-prepare-for-your-technical-interview-javascript-101-tickets-51774189996) - Wednesday, November 7, 2018 6:30 PM & Wednesday, November 28, 2018 6:30 PM
 
-- More Learn to codes coming soon!!!
+- [JavaScript Fundamentals Mini Bootcamp 1](https://www.eventbrite.com/e/learn-javascript-and-prepare-for-your-technical-interview-javascript-fundamentals-mini-bootcamp-1-tickets-51775610244) - Saturday, November 10, 2018 10:00 AM & Saturday, December 1, 2018 10:00 AM
 
-A weekly list of meetups I think I awesome in Seattle [here](http://sageelliott.com/meetups/).
+- [Javascript Functions and Scopes](https://www.eventbrite.com/e/learn-javascript-and-prepare-for-your-technical-interview-javascript-functions-and-scopes-tickets-51775970321) - Wednesday, November 14, 2018 6:30 PM & Wednesday, December 5, 2018 6:30 PM
 
+- [JavaScript Fundamentals Mini Bootcamp 2](https://www.eventbrite.com/e/learn-javascript-and-prepare-for-your-technical-interview-javascript-fundamentals-mini-bootcamp-2-tickets-51776185966) - Saturday, November 17, 2018 10:00 AM & Saturday, December 8, 2018 10:00 AM
 
-#### Part-Time Courses
-- [Data Science Fundamentals](https://www.eventbrite.com/e/data-science-fundamentals-intro-to-python-seattle-108-1114-tickets-47489110207) - 10/8/2018
-- [Data Analytics](https://www.galvanize.com/seattle/data-analytics) - 10/23/2018
-- [Structured Study Program at Hack Reactor](https://getcoding.hackreactor.com/ssp-overview/) - 11/5/2018 or 11/12/2018  ***If you're ineterested in learning more about web development THIS IS A GREAT OPTION!!!!! 
+- [PuPPy Programming Night](https://www.meetup.com/PSPPython/events/zdzrxpyxnbhc/) - Every Thusday 6:30pm
+
+- [Practicing Coding Interviews](https://www.meetup.com/PSPPython/events/pmqfjqyxnbmc/) - Every Monday 6:30pm
+
 
 
 #### Immersive Bootcamp
-- [Data Science](https://www.galvanize.com/seattle/data-science) - 1/22/2019
-- [Software Engineer](https://www.galvanize.com/seattle/web-development) - 1/7/2019
+- [Data Science](https://www.galvanize.com/seattle/data-science) - Jan22 - Apr19 & May6 - Aug2
 
+- [Software Engineer](https://www.galvanize.com/seattle/web-development) - Jan7 - May17 & Feb25 - Jul5
 
-#### Co-working Space
-[work in our building!](https://www.galvanize.com/entrepreneur)
+#### Part-Time Courses
+- [Data Analytics](https://www.galvanize.com/seattle/data-analytics) - Jan22 - Apr11
 
+- [Data Science Fundamentals](https://www.galvanize.com/seattle/data-science-fundamentals) - Feb20 - Mar29
+
+- [Hack Reactor Structured Study Program](https://getcoding.hackreactor.com/ssp-overview/?utm_source=Galvanize&utm_medium=Part-Time-Courses&utm_campaign=SSP) - November 5 & November 12
 
 ## Questions:
-Please feel free to reach out to Sage Elliott with any questions!
+Please feel free to reach out to Sage Elliott with any questions about Galvanize!
+
+- Sage Elliott [sage.elliott@galvanize.com](sage.elliott@galvanize.com)
+
+## Gavin's info:
 
 - LinkedIn: [GavinLook](https://www.linkedin.com/in/gavinlook/) 
 - Email: [GTLook@gmail.com](mailto:GTLook@gmail.com)
