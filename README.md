@@ -245,52 +245,11 @@ something more complex?
 ```
 let customer = { name: "Foo" }
 let card = { amount: 7, product: "Bar", unitprice: 42 }
-let message = `Hello ${customer.name}, want to buy ${card.amount} ${card.product} for a total of ${card.amount * card.unitprice} bucks?`
+let message = `Hello ${customer.name}, want to buy ${card.amount} ${card.product} 
+		for a total of ${card.amount * card.unitprice} bucks?`
 ```
+
 Whoah, did we just do inline JS in a string?  Let's check it out!
-
-
-## Loops
-We're going to go over some of the basic loops in javascript, but yet again we're not going to cover everything, so you may want to read more about loops [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration).
-
-Loops are used when you want to repeat something. You can repeat the exact same thing, or change some variable and repeat the action again.
-
-two common types of loops are `for` and `while`.
-`for` loops are often used to run a loop a specified amount of time.
-
-`while` loops are often used to run a loop indefinitely until certain criteria are met.
-
-Example:
-
-This `for` loop will run 5 times, and print out the value of `i` to the console. 
-
-```
-var i;
-for (i = 1; i <= 5; i++) {
-    console.log(i)
-}
-```
-
-If `i` were set to 1 it would run this loop and print the string until the value of `i` changed. If you run this in your browser it will probably crash it!
-
-```
-var i = 0;
-while (i == 1) {
-    console.log("I will crash your browser")
-}
-```
-
-
-## Interact with dialog boxes
-using dialog boxes can be simple way to get started interacting with users.
-
-Alert: Pop up information in a dialog box
-
-`alert("Hello, I'm a pop up");`
- 
-Prompt: get information from a user in dialog box
-
-`prompt("I'm a pop up you can type in!")`
 
 
 ## Lets do some code!
@@ -299,23 +258,15 @@ You just learned a lot! Lets put it together and build something!
 Sign up if you haven't already and create a new project: https://repl.it/
 
 
-We're going to build a number guessing game using:
+We're going to use recursion and everything you just learned to solve a coding challenge:
 
-- variables
-- Comparison Operators
-- Conditionals
-- loops
-- functions
-- dialog boxes
+The drawing shows 6 squares the sides of which have a length of 1, 1, 2, 3, 5, 8. It's easy to see that the sum of the perimeters of these squares is : 4 * (1 + 1 + 2 + 3 + 5 + 8) = 4 * 20 = 80
 
-If you get stuck or want to look ahead at the completed project you can view it [here](https://repl.it/@SageElliott/GuessingGame).
+Could you give the sum of the perimeters of all the squares in a rectangle when there are n + 1 squares disposed in the same manner as in the drawing:
 
-What are some ideas for improvements? 
+![fib picture](https://i.imgur.com/EYcuB1wm.jpg)
 
-- Exit on command
-- data validation
-- input the number range from popup
-- output grammar depending on number of tries
+Lets solve this problem together!
 
 
 # YOU DID IT! YOU'RE NOW A PROGRAMMER!
@@ -364,15 +315,12 @@ A weekly list of meetups I think I awesome in Seattle [here](http://sageelliott.
 ## Questions:
 Please feel free to reach out to Sage Elliott with any questions!
 
-- Twitter: [@sagecodes](https://twitter.com/@sagecodes)
-- LinkedIn: [sageelliott](https://www.linkedin.com/in/sageelliott/) 
-- Email: [sage.elliott@galvanize.com](mailto:sage.elliott@galvanize.com)
+- LinkedIn: [GavinLook](https://www.linkedin.com/in/gavinlook/) 
+- Email: [GTLook@gmail.com](mailto:GTLook@gmail.com)
+
 
 #### About the Instructors
 
-[Sage Elliott](https://www.linkedin.com/in/sageelliott/) is a technology evangelist for Galvanize based in Seattle. Previously he worked as a Software and hardware engineer for startup around Seattle WA and Melbourne Fl.
+[Gavin Look](https://www.linkedin.com/in/gavinlook/) is a full stack web developer that graduated from the galvanize web developer program speak to me after the presentation to talk about my expereince.
 
-You can email him at [sage.elliott@galvanize.com](mailto:age.elliott@galvanize.com) or tweet [@sagecodes](https://twitter.com/sagecodes) for any further questions.
-
-
-
+Thank you!
