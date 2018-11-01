@@ -69,6 +69,8 @@ Javascript is often used with HTML and CSS to create dynamic web pages.
 
 ### What is EMCAScript 6?
 
+JavaScript is constantly growing and being improved!  We're going to talk about the newest changes!
+
 ECMAScript 6 is also known as ES6 and ECMAScript 2015
 
 Some people like to call it JavaScript 6.
@@ -81,9 +83,9 @@ This chapter will introduce some of the new features in ES6.
 - JavaScript let
 - JavaScript const
 - JavaScript default parameter values
-- Array.find()
 - Arrow Functions
-- Destucturing!
+- Array.find() and other new methods!
+- Destucturing!  Also known as rest and spread
 - template literals
 - [And so much more](https://es6-features.org/)
 
@@ -178,7 +180,8 @@ mult(2, 5) // Will return 10
 Try it out! 
 
 
-## Array.find():
+## Array.find()
+
 The find() method is a new ES6 method that returns the value of the first array element that passes a test function.
 
 This example finds (returns the value of ) the first element that is larger than 18:
@@ -192,66 +195,60 @@ function myFunction(value, index, array) {
 }
 ```
 
-
-## Comparison Operators:
-Comparison Operators are used quite frequently in programming. Its a great way to compare and use data.
-
-Again we won't cover ALL of the comparison operators in this workshop, but you can see a full list of them [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators)
-
-- `==` Equal
-- `===` Strict Equal
-- `!=` Not Equal
-- `>` Greater Than
-- `>=` Greater Than or Equal
-- `<` Less Than
-- `<=` Less Than or Equal
-
-Example:
-
-`current_score >= highest_score`
-This would return a boolean value. Depending on the values of these variables this would return either `true` or `false`. Try it in your console using numbers instead of variables!
+Let's write this with a fat arrow function in the repl!
 
 
-## Functions
-Reduce, Reuse, Recycle
+## Rest
 
-Functions make it easy to reuse code. If you find yourself repeating code you may want to turn it into a function!
-
-Example:
-This function takes in two arguments(a, b) and returns the value of them added together. 
+ES6 has some amazing new tools to help deal with arrays of information.  When passing in an array we can grab varables out of the array to work with.  Lets try it out!
 
 ```
-function add(a, b) {
-	return a + b; 
-};
-```
-to use the function call it by writing its name and open/close parenthesis(). With arguments passed inside the parenthesis():
-
-- `add(5,5)` | output: 10
-- `add(2,5)` | output: 7
-
-In this simple example you're not saving a ton of code, but imagine a function that uses many lines of code! 
-
-
-## Conditionals
-
-When writing a program you'll often want to check if data meets a certain condition or not. We can use conditionals to make decision about our data and create different outcomes
-
- In javascript you'll often use the `if` statement. This may be followed by `else if` or `else` depending on how many conditions need to be checked.
-
-Example:
-
-```
-if (guess == answer) {
-    message = "You Win!";
-} else if (guess < answer) {
-    message = "Your guess is too low!";
-} else if (guess > answer){
-    message = "your guess is too high!";
-} else {
-	message = "I think you entered something wrong...";
+let restPractice = (a, b, ..rest) {
+	console.log(rest)
+	return a + ' ' + b
 }
+
+restPractice(['Hello', 'World', 'Goodbye', 'World'])
+// Will log [Goodbye, World]
+// Will return 'Hello World'
 ```
+How can we modify this function to return a goodbye statement?
+
+
+## Spread
+
+Spreading is the perfect sidekick to rest!  It is super useful in recursive statements and combinging information.
+
+```
+let pets = ['cat', 'dog', 'bird']
+let newPets = ['fish', 'snek']
+
+let allPets = [...pets, ...newPets, 'hamster']
+
+console.log(allPets)
+// will log ['cat', 'dog', 'bird', 'fish', 'snek', 'hamster']
+```
+
+
+## String Interpolation With Template Literals
+
+We know strings can be declared with the '' and the "".  Now with ES6 we can use ` ` to create a template literal string that can do some new and fun things!  This will make things like .concat and creating strings easier and more concise.
+
+
+```
+let favoritePetName = snek
+let newString = `My farvorite name for a snake is calling them a ${favoritePetName}'
+```
+
+something more complex?
+
+```
+let customer = { name: "Foo" }
+let card = { amount: 7, product: "Bar", unitprice: 42 }
+let message = `Hello ${customer.name}, want to buy ${card.amount} ${card.product} for a total of ${card.amount * card.unitprice} bucks?`
+```
+Whoah, did we just do inline JS in a string?  Let's check it out!
+
 
 ## Loops
 We're going to go over some of the basic loops in javascript, but yet again we're not going to cover everything, so you may want to read more about loops [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration).
