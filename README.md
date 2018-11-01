@@ -82,61 +82,115 @@ This chapter will introduce some of the new features in ES6.
 - JavaScript const
 - JavaScript default parameter values
 - Array.find()
-- Array.findIndex()
 - Arrow Functions
 - Destucturing!
 - template literals
-- [And so mmuch more](https://es6-features.org/)
+- [And so much more](https://es6-features.org/)
 
 
-## JavaScript Basics:
+## ES6 JavaScript Basics:
 
-### Data Types:
-We're going to stick with the basics, so We wont be going over EVERY data type in javascript, but you you can read a more comprehensive list [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures).  
+### Variable Scope:
+We're going to start with the basics var vs let and const.  
 
 Feel free to try these code samples out in your developer console(I'll show you how) or your repl!
 
-#### Numbers:
+#### Let:
 
-Numbers are written just like you would think. Just the number! No quotes or symbols to worry about. If you do put quotes around a number it will become a string (see next)
+The let statement allows you to declare a variable with block scope.
 
-`25` `100`
+```
+var x = 10;
+// Here x is 10
+{ 
+    let x = 2;
+    // Here x is 2
+}
+// Here x is 10
+```
 
-Multiple, Add, Divide, Compare
+#### Const:
 
-- `5 * 5` | output: 25
-- `5 + 5` | output: 10
-- `8 / 2` | output: 4
-- `8 > 2` | output: true
+The const statement allows you to declare a constant (a JavaScript variable with a constant value).
 
-#### Strings:
-Strings can be a collection of letters, symbols and/or numbers. They are made by surrounding the content with quotation marks.
+Constants are similar to let variables, except that the value cannot be changed.
 
-`"Hello, World."`
-`"CrAzy Random String 987879896jvdjvda &&(&(@*(*"`
-
-Can we add strings together? Try it out!
-
-
-#### Booleans:
-You can think of Booleans as yes(true) and no(false)
-
-`true` `false`
-
-We'll go into how to use these in a little bit. For now just remember they exist!
-
-
-## Variables:
-Variable are a way to store information.
-This is super useful! You can then receive or update the variable in your program. You'll see this later!
-
-Think of it as naming a piece of data.
-
-We're going to define our variable using the keyword `var`. Its very common to see variables not defined using the newer keywords `let` or `const`. We won't go into the differnces in this workshop but you can read more about `let` & `const` [here](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75). For now just remember that `var` means we're creating a new variable.
+```
+var x = 10;
+// Here x is 10
+{ 
+    const x = 2;
+    // Here x is 2
+    x = 3 //this will return an error!
+}
+// Here x is 10
+```
 
 
-- `var twitter = "@sagecodes";`
-- `var score = 0;`
+#### Default Parameter Values:
+
+ES6 allows function parameters to have default values.  These values are passed into a fucntion when no other value is given.
+
+```
+function myFunction(x = 10, y = 10) {
+    // y is 10 if not passed or undefined
+    return x + y;
+}
+myFunction(1,2) // will return 3
+myFunction(5); // will return 15
+myFunction(); // will return 20
+```
+
+
+## Arrow Functions
+
+Arrow functions allows a short syntax for writing function expressions.
+
+You don't need the function keyword, the return keyword, and the curly brackets.
+
+Arrow functions do not have their own this. They are not well suited for defining object methods.
+
+Arrow functions are not hoisted. They must be defined before they are used.
+
+Using const is safer than using var, because a function expression is always constant value.
+
+You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them:
+
+```
+// ES5
+function mult(x, y) {
+     return x * y;
+}
+
+//or
+
+var mult = function(x, y) {
+     return x * y;
+}
+
+// ES6
+const mult = (x, y) => x * y;
+
+// In all cases
+mult(2, 5) // Will return 10
+```
+
+Try it out! 
+
+
+## Array.find():
+The find() method is a new ES6 method that returns the value of the first array element that passes a test function.
+
+This example finds (returns the value of ) the first element that is larger than 18:
+
+```
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(myFunction);
+
+function myFunction(value, index, array) {
+    return value > 18;
+}
+```
 
 
 ## Comparison Operators:
