@@ -19,7 +19,7 @@ The goal of this brief course is to provide you with a fun introduction to the a
 
 #### Please set up the following:
 
-* A web browser to see what we're working on as others see it (Recommend Google Chrome: [chrome.google.com] (http://chrome.google.com))
+* A web browser to see what we're working on as others see it (Recommend Google Chrome: [chrome.google.com](http://chrome.google.com) )
 * We will be using an online text editor for this workshop. You can sign up here: [https://repl.it/](https://repl.it/) 
 
 
