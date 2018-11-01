@@ -82,6 +82,7 @@ This chapter will introduce some of the new features in ES6.
 
 - JavaScript let
 - JavaScript const
+- for of and in loops
 - JavaScript default parameter values
 - Arrow Functions
 - Array.find() and other new methods!
@@ -90,7 +91,7 @@ This chapter will introduce some of the new features in ES6.
 - [And so much more](https://es6-features.org/)
 
 
-## ES6 JavaScript Basics:
+## ES6 JavaScript:
 
 ### Variable Scope:
 We're going to start with the basics var vs let and const.  
@@ -128,6 +129,36 @@ var x = 10;
 // Here x is 10
 ```
 
+#### For of and For in Loops
+
+For of and for in loops allow you to quickly create the most basic for loops in JS when you need to iterate over a collection of data.
+
+For of loops refrences the data in the given array.  A for loop *of* the data
+
+```
+const foo = ['cat', 'dog', 'snek']
+for(let i in foo){
+  console.log(i)
+}
+//logs cat
+//logs dog
+//logs snek
+```
+
+For in loops refrences the index in the given array.  A for loop of the *in*(dex) of the data
+
+```
+const foo = ['cat', 'dog', 'snek']
+for(let i in foo){
+  console.log(i)
+}
+//logs 0
+//logs 1
+//logs 2
+```
+
+lets try it out!  How does this make our lives easier?
+
 
 #### Default Parameter Values:
 
@@ -144,7 +175,7 @@ myFunction(); // will return 20
 ```
 
 
-## Arrow Functions
+## Arrow Functions:
 
 Arrow functions allows a short syntax for writing function expressions.
 
@@ -180,7 +211,7 @@ mult(2, 5) // Will return 10
 Try it out! 
 
 
-## Array.find()
+## Array.find():
 
 The find() method is a new ES6 method that returns the value of the first array element that passes a test function.
 
@@ -198,7 +229,7 @@ function myFunction(value, index, array) {
 Let's write this with a fat arrow function in the repl!
 
 
-## Rest
+## Rest:
 
 ES6 has some amazing new tools to help deal with arrays of information.  When passing in an array we can grab varables out of the array to work with.  Lets try it out!
 
@@ -215,7 +246,7 @@ restPractice(['Hello', 'World', 'Goodbye', 'World'])
 How can we modify this function to return a goodbye statement?
 
 
-## Spread
+## Spread:
 
 Spreading is the perfect sidekick to rest!  It is super useful in recursive statements and combinging information.
 
@@ -230,7 +261,7 @@ console.log(allPets)
 ```
 
 
-## String Interpolation With Template Literals
+## String Interpolation With Template Literals:
 
 We know strings can be declared with the '' and the "".  Now with ES6 we can use ` ` to create a template literal string that can do some new and fun things!  This will make things like .concat and creating strings easier and more concise.
 
@@ -252,7 +283,7 @@ let message = `Hello ${customer.name}, want to buy ${card.amount} ${card.product
 Whoah, did we just do inline JS in a string?  Let's check it out!
 
 
-## Lets do some code!
+## Lets do some code!:
 You just learned a lot! Lets put it together and build something!
 
 Sign up if you haven't already and create a new project: https://repl.it/
