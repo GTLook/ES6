@@ -1,11 +1,12 @@
 
-const perimeter = (n) => {
-    return 4 * fib(n+1)
+const perimiter = (n) => 4 * fibSum(n+1)
+
+const fibSum = ( n , current = 1, previous = 0) => {
+  console.log('n',n)
+  console.log('current',current)
+   console.log('previous',previous)
+  if( n == 0 ) return 0
+  if( n !== 0 ) return current + fibSum(--n, previous + current, current)
 }
 
-const fib = (n, current = 1, previous = 0) => {
-  if( n == 0 ) return 0 
-  if( n !== 0 ) return current + fib(n-1, previous + current, current)
-}
-
-perimeter(5)
+perimiter(5)
